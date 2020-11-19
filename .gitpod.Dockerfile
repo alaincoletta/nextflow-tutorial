@@ -5,10 +5,8 @@ FROM gitpod/workspace-full
 # RUN brew install bastet
 #
 # More information: https:
-RUN brew tap homebrew/cask-versions
-RUN brew update
-RUN brew tap homebrew/cask
-RUN brew cask install homebrew/cask-versions/adoptopenjdk8
+RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
+             && sdk install java 12.0.1.j9-adpt"
 RUN curl https://get.nextflow.io | bash
 RUN export $PATH='/workspace/nextflow-tutorial'
 RUN docker pull nextflow/rnaseq-nf
