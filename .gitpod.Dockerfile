@@ -6,7 +6,7 @@ FROM gitpod/workspace-full
 #
 # More information: https:
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
-             && sdk install java 11.0.2-zulufx"
+             && sdk install java"
 RUN curl https://get.nextflow.io | bash
 RUN export $PATH='/workspace/nextflow-tutorial'
 RUN docker pull nextflow/rnaseq-nf
