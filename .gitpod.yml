@@ -5,4 +5,5 @@ tasks:
   - command: >
       curl https://get.nextflow.io | bash
       export PATH="/workspace/nextflow-tutorial:$PATH"
+      echo nextflow -v
       
