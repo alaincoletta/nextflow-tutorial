@@ -7,7 +7,7 @@ FROM gitpod/workspace-full
 # More information: https:
 RUN brew tap homebrew/cask-versions
 RUN brew update
-RUN tap caskroom/cask
+RUN brew tap caskroom/cask
 RUN brew cask install java
 RUN curl https://get.nextflow.io | bash
 RUN export $PATH='/workspace/nextflow-tutorial'
